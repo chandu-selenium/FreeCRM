@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Free CRM Application Testcase Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.crm.qa.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Free CRM test(failed)" verbose="0">
+    <classes>
+      <class name="com.crm.qa.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validateLoginTest" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.LoginPageTest -->
+      <class name="com.crm.qa.tests.HomePageTest">
+        <methods>
+          <include name="verifyDealsLinkTest"/>
+          <include name="verifyCallsLinkTest"/>
+          <include name="validateContactsSettingIconTest"/>
+          <include name="verifyContactLinkTest"/>
+          <include name="verifyTasksLinkTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateUserLableTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.HomePageTest -->
+      <class name="com.crm.qa.tests.LandingPageTest">
+        <methods>
+          <include name="validateCrmlogoTest"/>
+          <include name="setUp"/>
+          <include name="validateCrmDropDwnTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.LandingPageTest -->
+    </classes>
+  </test> <!-- Free CRM test(failed) -->
+</suite> <!-- Failed suite [Free CRM Application Testcase Suite] -->

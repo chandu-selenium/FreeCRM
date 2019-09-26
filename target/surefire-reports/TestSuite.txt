@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 32, Failures: 4, Errors: 0, Skipped: 17, Time elapsed: 271.893 s <<< FAILURE! - in TestSuite
+validateLoginTest(com.crm.qa.tests.LoginPageTest)  Time elapsed: 16.077 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui negative message']"}
+  (Session info: chrome=76.0.3809.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KALYAN-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\kalyan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49678}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e623d4b554807fc08c8c7be556ee9cf4
+*** Element info: {Using=xpath, value=//div[@class='ui negative message']}
+	at com.crm.qa.tests.LoginPageTest.validateLoginTest(LoginPageTest.java:48)
+
+validateCrmDropDwnTest(com.crm.qa.tests.LandingPageTest)  Time elapsed: 0.859 s  <<< FAILURE!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read property 'left' of undefined
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KALYAN-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\kalyan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49855}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6522bee40d5b6555c7cd455d6983de40
+	at com.crm.qa.tests.LandingPageTest.validateCrmDropDwnTest(LandingPageTest.java:65)
+
+validateCrmlogoTest(com.crm.qa.tests.LandingPageTest)  Time elapsed: 0.335 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.crm.qa.tests.LandingPageTest.validateCrmlogoTest(LandingPageTest.java:41)
+
+setUp(com.crm.qa.tests.HomePageTest)  Time elapsed: 31.509 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KALYAN-PC', ip: '192.168.0.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\kalyan\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d131c4394f0271d2c6d0b8e963de3c99
+	at com.crm.qa.tests.HomePageTest.setUp(HomePageTest.java:35)
+
